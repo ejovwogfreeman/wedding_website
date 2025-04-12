@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.splash-container1 {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  padding-top: 750px;
+}
+
+.frame-container {
+  position: relative;
+  left: 270px;
+  transform: translateX(-50%);
+}
+
+.top-frame {
+  position: absolute;
+  top: -100px;
+}
+.bottom-frame {
+  position: absolute;
+}
