@@ -99,6 +99,13 @@ body {
   animation: showImg 5s ease-out 5s forwards;
 }
 
+.arrow-img {
+  position: absolute;
+  bottom: 110px;
+  opacity: 0;
+  animation: showImg 5s ease-out 5s forwards;
+}
+
 .flower-img {
   position: absolute;
   bottom: 0px;
