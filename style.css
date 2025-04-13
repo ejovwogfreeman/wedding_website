@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -46,5 +46,124 @@ body {
   .bottom-frame {
     bottom: -80px;
     width: 300px;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.splash-container1 {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+.frame-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TOP FRAME */
+.top-frame {
+  position: absolute;
+  top: -50px;
+  display: block;
+  opacity: 0;
+  animation: growThenMoveTop 3s ease-out forwards;
+}
+
+/* BOTTOM FRAME - ROTATED */
+.bottom-frame {
+  position: absolute;
+  bottom: -50px;
+  display: block;
+  opacity: 0;
+  animation: growThenMoveBottom 3s ease-out forwards;
+}
+
+/* NAME TEXT */
+.name-text {
+  font-size: 32px;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0);
+  z-index: 2;
+  animation: showName 1s ease-out 3s forwards; /* shows after 3s */
+}
+
+/* TOP ANIMATION: grow first, then move UP */
+@keyframes growThenMoveTop {
+  0% {
+    transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-50%) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(1);
+    opacity: 1;
+  }
+}
+
+/* BOTTOM ANIMATION: grow first, then move DOWN */
+@keyframes growThenMoveBottom {
+  0% {
+    transform: translateY(50%) scale(0) rotate(180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50%) scale(1.1) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) scale(1) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+/* NAME ANIMATION */
+@keyframes showName {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE (Optional) */
+@media screen and (max-width: 500px) {
+  .top-frame {
+    top: -80px;
+    width: 300px;
+  }
+
+  .bottom-frame {
+    bottom: -80px;
+    width: 300px;
+  }
+
+  .name-text {
+    font-size: 24px;
   }
 }
