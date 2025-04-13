@@ -4,13 +4,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .splash-container1 {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100dvh;
 }
 
 .frame-container {
@@ -24,8 +30,21 @@
 .top-frame {
   position: absolute;
   top: -100px;
+  display: block;
 }
 .bottom-frame {
   position: absolute;
   bottom: -100px;
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .top-frame {
+    top: -80px;
+    width: 300px;
+  }
+  .bottom-frame {
+    bottom: -80px;
+    width: 300px;
+  }
 }
