@@ -127,6 +127,14 @@ body {
 
   /* TOP ANIMATION: grow first, then move UP */
   @keyframes growThenMoveTop {
+    0% {
+      transform: translateY(-50%) scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-50%) scale(1.1);
+      opacity: 1;
+    }
     100% {
       transform: translateY(-100px) scale(1);
       opacity: 1;
@@ -135,6 +143,14 @@ body {
 
   /* BOTTOM ANIMATION: grow first, then move DOWN */
   @keyframes growThenMoveBottom {
+    0% {
+      transform: translateY(50%) scale(0) rotate(180deg);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(50%) scale(1.1) rotate(180deg);
+      opacity: 1;
+    }
     100% {
       transform: translateY(100px) scale(1) rotate(180deg);
       opacity: 1;
