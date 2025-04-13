@@ -33,7 +33,7 @@ body {
 /* TOP FRAME */
 .top-frame {
   position: absolute;
-  top: -50px;
+  top: 0px;
   display: block;
   opacity: 0;
   animation: growThenMoveTop 3s ease-out forwards;
@@ -42,7 +42,7 @@ body {
 /* BOTTOM FRAME - ROTATED */
 .bottom-frame {
   position: absolute;
-  bottom: -50px;
+  bottom: 0px;
   display: block;
   opacity: 0;
   animation: growThenMoveBottom 3s ease-out forwards;
@@ -78,7 +78,7 @@ body {
     opacity: 1;
   }
   100% {
-    transform: translateY(-100px) scale(1);
+    transform: translateY(-150px) scale(1);
     opacity: 1;
   }
 }
@@ -94,7 +94,7 @@ body {
     opacity: 1;
   }
   100% {
-    transform: translateY(100px) scale(1) rotate(180deg);
+    transform: translateY(150px) scale(1) rotate(180deg);
     opacity: 1;
   }
 }
@@ -114,16 +114,30 @@ body {
 /* RESPONSIVE (Optional) */
 @media screen and (max-width: 500px) {
   .top-frame {
-    top: -30px;
     width: 280px;
   }
 
   .bottom-frame {
-    bottom: -30px;
     width: 280px;
   }
 
   .name-text {
     font-size: 24px;
+  }
+
+  /* TOP ANIMATION: grow first, then move UP */
+  @keyframes growThenMoveTop {
+    100% {
+      transform: translateY(-100px) scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* BOTTOM ANIMATION: grow first, then move DOWN */
+  @keyframes growThenMoveBottom {
+    100% {
+      transform: translateY(100px) scale(1) rotate(180deg);
+      opacity: 1;
+    }
   }
 }
