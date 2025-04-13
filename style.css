@@ -8,13 +8,17 @@
   width: 900px;
   margin: auto;
   display: flex;
-  padding-top: 750px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .frame-container {
   position: relative;
-  left: 270px;
-  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-frame {
@@ -23,4 +27,5 @@
 }
 .bottom-frame {
   position: absolute;
+  bottom: -100px;
 }
