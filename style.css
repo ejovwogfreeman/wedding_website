@@ -214,6 +214,21 @@ body {
 .main-container .frame {
   position: absolute;
   top: 10px;
+  width: 98%;
+}
+
+.main-container .location {
+  background-color: black;
+  color: white;
+  width: 95%;
+  padding: 12px;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  bottom: 70px;
+  text-align: center;
 }
 
 .main-container .reserve-btn {
@@ -224,6 +239,7 @@ body {
   font-size: 20px;
   font-family: "Dancing Script", cursive;
   border-radius: 10px;
+  display: block;
   position: absolute;
   bottom: 10px;
 }
