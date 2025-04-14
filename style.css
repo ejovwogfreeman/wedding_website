@@ -215,7 +215,7 @@ body {
   position: absolute;
   top: 10px;
   width: 98%;
-  object-fit: cover;
+  /* object-fit: cover; */
   height: calc(100dvh - 100px);
 }
 
