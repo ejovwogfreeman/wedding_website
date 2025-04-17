@@ -206,44 +206,61 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100dvh;
   overflow: hidden;
   position: relative;
 }
 
-.main-container .frame {
+.main-container .bird-img {
   position: absolute;
-  top: 10px;
-  width: 98%;
-  /* object-fit: cover; */
-  height: calc(100dvh - 100px);
+  top: 20px;
+  width: 400px;
+}
+
+.main-container .info-cont {
+  background: linear-gradient(#0d2e35, #f2f6d2);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border-radius: 10px;
+  margin-top: 70px;
+  padding: 80px 20px 20px;
+}
+
+.main-container .flower_3d {
+  width: 150px;
+  margin: auto;
+  position: relative;
+  margin-bottom: -40px;
+}
+
+.main-container .glass_tube {
+  width: 90%;
+  margin: auto;
 }
 
 .main-container .location {
-  background-color: black;
-  color: white;
-  width: 95%;
+  background-color: #f2f6d2;
+  color: black;
+  width: 350px;
   padding: 12px;
   font-size: 20px;
   font-family: "Dancing Script", cursive;
   border-radius: 10px;
   display: block;
-  position: absolute;
-  bottom: 70px;
   text-align: center;
+  margin: 15px 0px;
 }
 
 .main-container .reserve-btn {
   background-color: black;
   color: white;
-  width: 95%;
+  width: 350px;
   padding: 10px;
   font-size: 20px;
   font-family: "Dancing Script", cursive;
   border-radius: 10px;
-  display: block;
-  position: absolute;
-  bottom: 10px;
 }
 
 /* RESPONSIVE (Optional) */
