@@ -244,13 +244,18 @@ body {
   background-color: #f2f6d2;
   color: black;
   width: 350px;
-  padding: 12px;
+  /* padding: 12px; */
   font-size: 20px;
   font-family: "Dancing Script", cursive;
   border-radius: 10px;
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 15px 0px;
+}
+
+.main-container .location img {
+  width: 50px;
 }
 
 .main-container .reserve-btn {
@@ -261,6 +266,23 @@ body {
   font-size: 20px;
   font-family: "Dancing Script", cursive;
   border-radius: 10px;
+}
+
+.support {
+  position: fixed;
+  background-color: #558253;
+  color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  right: 0px;
+  bottom: 200px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.support img {
+  width: 50px;
 }
 
 /* RESPONSIVE (Optional) */
