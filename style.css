@@ -241,6 +241,24 @@ body {
   margin: auto;
 }
 
+.marriage-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  bottom: 35px;
+  right: 45px;
+}
+
+.marriage-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #f2f6d2;
+}
+
 .time {
   color: white;
   font-size: 30px;
