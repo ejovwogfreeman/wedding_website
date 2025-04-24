@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
 }
 
 .splash-container {
@@ -324,6 +325,133 @@ body {
 
 .support img {
   width: 50px;
+}
+
+.contact-container {
+  width: 350px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.contact-container p {
+  margin: 15px 0px;
+}
+
+.contact-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.contact-number div {
+  display: flex;
+  align-items: center;
+}
+
+.contact-number img {
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+}
+.contact-number .left img {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.contact-number img:last-child {
+  background-color: white;
+  margin-left: 5px;
+}
+
+.map-location {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 20px;
+}
+
+.map-location .contact-number {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
+
+.support-container {
+  background-color: white;
+  width: 350px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.support-container h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.support-container small {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.support-container .account-info {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.support-container .account-info h3 {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.support-container .account-info .account-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.support-container .account-info section {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  padding: 10px;
+}
+
+.support-container .account-info section:last-child {
+  margin-bottom: 0px;
+}
+
+.support-container .account-info section h4 {
+  margin-bottom: 7px;
 }
 
 /* RESPONSIVE (Optional) */
