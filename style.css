@@ -294,13 +294,19 @@ body {
   align-items: center;
   justify-content: center;
   margin: 15px 0px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container .location:hover {
+  transform: scale(1.01);
 }
 
 .main-container .location img {
   width: 50px;
 }
 
-.main-container .reserve-btn {
+.main-container .reserve {
   background-color: black;
   color: white;
   width: 350px;
@@ -308,6 +314,14 @@ body {
   font-size: 20px;
   font-family: "Dancing Script", cursive;
   border-radius: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container .reserve:hover {
+  transform: scale(1.01);
 }
 
 .support {
@@ -323,6 +337,11 @@ body {
   padding: 5px 15px;
   text-decoration: none;
   z-index: 100000;
+  transition: 0.3s ease-in-out;
+}
+
+.support:hover {
+  transform: scale(1.01);
 }
 
 .support img {
@@ -349,6 +368,11 @@ body {
   padding: 10px;
   border-radius: 50px;
   margin-top: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-number:hover {
+  transform: scale(1.01);
 }
 
 .contact-number div {
@@ -544,11 +568,18 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
-.bottom-tab div {
+.bottom-tab a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+
+.bottom-tab a:hover {
+  transform: scale(1.01);
 }
 
 /* RESPONSIVE (Optional) */
