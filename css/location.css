@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Concert+One&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-container {
+  width: 350px;
+  background-color: #f3f3f3;
+}
+
+.contact-container p {
+  margin: 15px 0px;
+}
+
+.contact-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-number:hover {
+  transform: scale(1.01);
+}
+
+.contact-number div {
+  display: flex;
+  align-items: center;
+}
+
+.contact-number img {
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+}
+.contact-number .left img {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.contact-number img:last-child {
+  background-color: white;
+  margin-left: 5px;
+}
+
+.map-location {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  border-radius: 20px;
+}
+
+.map-location .contact-number {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.contact-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #5100ff;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  transform: scale(1.01);
+}
+
+.contact-button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}

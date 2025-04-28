@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/location.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Hanzel & Gretel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="contact-container">
+        <div style="position: relative; filter: invert(90%) hue-rotate(180deg)">
+          <div
+            style="
+              position: relative;
+              padding-bottom: 75%;
+              height: 500px;
+              overflow: hidden;
+              margin-top: 20px;
+            "
+          >
+            <iframe
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                border-radius: 20px;
+              "
+              loading="lazy"
+              allowfullscreen
+              src="https://maps.google.com/maps?q=akwa+ibom+nigeria&output=embed"
+            >
+            </iframe>
+            <div class="map-location">
+              <h2>Location</h2>
+              <p style="margin: 0px; margin-top: -300px">
+                Click the arrow below and follow the directions on the map to
+                get the venue locatin
+              </p>
+              <a href="location.html" class="contact-number">
+                <span>Click to follow</span>
+                <img src="./images/arrow.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <h2>Contact</h2>
+          <p>
+            Call this number for further enquiries or any area you need clarity
+          </p>
+          <div class="contact-number">
+            <div class="left">
+              <img src="./images/default.jpg" alt="" />
+              <span><span>John Doe</span><br /><span>09043483307</span></span>
+            </div>
+            <div class="right">
+              <img src="./images/copy.svg" alt="" />
+            </div>
+          </div>
+          <a href="tel:09043483307" class="contact-button">
+            <span>call</span>
+            <img src="./images/call.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
