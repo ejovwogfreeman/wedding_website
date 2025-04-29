@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reserve.css" />
+    <link rel="stylesheet" href="css/invitation_card.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <title>Hanzel & Gretel</title>
     <link
@@ -17,21 +17,24 @@
         <a href="index.html" class="back-btn">
           <img src="images/back-btn.png" alt=""
         /></a>
-        <img class="chair" src="images/chair.png" alt="" />
-        <form
-          onsubmit="window.location.href='reserve_success.html'; return false;"
-        >
-          <h2>Reserve a Seat</h2>
-          <p>Please tell us your name to better prepare for your arrival</p>
-          <div class="input-container">
-            <label for="">Full Name</label>
-            <input type="text" />
+        <p class="invited"><span>You are invited to join</span></p>
+        <div class="flower-container">
+          <img class="flower" src="images/white-flower.png" alt="" />
+        </div>
+        <form>
+          <h1>Hanzel & <br />Gretel</h1>
+          <div class="card-info">
+            <div>
+              <img src="images/calendar.gif" alt="" width="35px" /><span
+                >On the 19th of Sept. 2025</span
+              >
+            </div>
+            <div>
+              <img src="images/location.gif" alt="" width="65px" /><span
+                >@1901 Thornridge Cir. Shiloh, Hawaii 81063</span
+              >
+            </div>
           </div>
-          <div class="input-container">
-            <label for="">Phone Number</label>
-            <input type="text" />
-          </div>
-          <button href="" class="form-button">Confirm Reservation</button>
         </form>
       </div>
     </div>

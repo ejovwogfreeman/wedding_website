@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/attendance_card.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Hanzel & Gretel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="create-container">
+        <div class="create-card">
+          <div class="back-container">
+            <a href="index.html" class="back-btn">
+              <img src="images/back-btn.png" alt=""
+            /></a>
+          </div>
+          <div class="card-wrapper">
+            <img class="ribbon" src="images/ribbon.png" alt="" />
+            <div class="card">
+              <h2>I will be attending</h2>
+              <div class="input-box" id="imageSelector">
+                <img
+                  id="avatarPreview"
+                  src="images/default.jpg"
+                  alt="Select Avatar"
+                />
+              </div>
+              <h1>Union of Hanzel & Gretel</h1>
+              <div class="card-info">
+                <div>
+                  <img
+                    src="images/calendar.gif"
+                    alt=""
+                    width="35px"
+                  /><br /><span>On the 19th of Sept. 2025</span>
+                </div>
+                <div>
+                  <img
+                    src="images/location.gif"
+                    alt=""
+                    width="65px"
+                  /><br /><span
+                    >@1901 Thornridge Cir. Shiloh, Hawaii 81063</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            href="attendance_card.html"
+            class="preview-button disabled"
+            id="previewBtn"
+          >
+            <img src="images/download.png" width="35px" alt="" />
+            <span style="margin-left: 10px">Download Card</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="js/attendance_card.js"></script>
+</html>

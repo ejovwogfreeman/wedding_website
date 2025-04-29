@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Concert+One&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+.create-container {
+  height: 100dvh;
+  width: 100%;
+}
+
+.create-card {
+  width: 85%;
+  margin: auto;
+}
+
+.create-card h2 {
+  margin-top: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+.create-card p {
+  margin: 20px 0px;
+  font-family: "Dancing Script", cursive;
+}
+
+.input-box {
+  border: 1px dashed #ccc;
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.input-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px dashed #ccc;
+}
+
+.create-card .change-photo {
+  background-color: #eefafd;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+.preview-button {
+  background-color: #ccc;
+  color: white;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  padding: 15px;
+  pointer-events: none;
+}
+
+.preview-button:hover {
+  transform: scale(1.01);
+}
+
+.preview-button.enabled {
+  background-color: black;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.back-container {
+  width: 100%;
+  padding: 20px 0px;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .reserve-container {
+    width: 100%;
+  }
+}
