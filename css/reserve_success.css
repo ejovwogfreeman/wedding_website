@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Concert+One&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+.reserve-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  background: url("../images/background.png");
+  object-fit: cover;
+  position: relative;
+  height: 100dvh;
+}
+
+.back-btn {
+  position: absolute;
+}
+
+.chair {
+  position: absolute;
+  margin-left: 10px;
+  bottom: 300px;
+  z-index: 1000;
+}
+
+.create-card {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  padding-top: 50px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+form h2 {
+  margin-top: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+form p {
+  margin: 20px 0px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.input-container label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input {
+  display: block;
+  padding: 14px 10px 6px 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input-container.focused label,
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.create-card-button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  padding: 15px;
+}
+
+.create-card-button:hover {
+  transform: scale(1.01);
+}
+
+@media screen and (max-width: 500px) {
+  .reserve-container {
+    width: 100%;
+  }
+}
