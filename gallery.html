@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reserve.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <title>Hanzel & Gretel</title>
     <link
@@ -17,24 +17,50 @@
         <a href="index.html" class="back-btn">
           <img src="images/back-btn.png" alt=""
         /></a>
-        <img class="chair" src="images/chair.png" alt="" />
-        <form
-          onsubmit="window.location.href='reserve_success.html'; return false;"
-        >
-          <h2>Reserve a Seat</h2>
-          <p>Please tell us your name to better prepare for your arrival</p>
-          <div class="input-container">
-            <label for="">Full Name</label>
-            <input type="text" />
+        <div class="flower-container">
+          <img class="flower" src="images/white-flower.png" alt="" />
+        </div>
+        <form>
+          <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+              <div class="slide">
+                <img src="https://picsum.photos/id/1015/400/500" alt="1" />
+              </div>
+              <div class="slide">
+                <img src="https://picsum.photos/id/1016/400/600" alt="2" />
+              </div>
+              <div class="slide active">
+                <img src="https://picsum.photos/id/1018/400/700" alt="3" />
+              </div>
+              <div class="slide">
+                <img src="https://picsum.photos/id/1019/400/600" alt="4" />
+              </div>
+              <div class="slide">
+                <img src="https://picsum.photos/id/1020/400/500" alt="5" />
+              </div>
+            </div>
           </div>
-          <div class="input-container">
-            <label for="">Phone Number</label>
-            <input type="text" />
+          <div class="others">
+            <div class="union-date">
+              <p>Joyful Union of</p>
+              <div>
+                <img src="images/calendar.gif" alt="" width="35px" /><span
+                  >09/18/25</span
+                >
+              </div>
+            </div>
+            <h1>Hanzel & Gretel</h1>
+            <div class="card-info">
+              <div>
+                <img src="images/location.gif" alt="" width="65px" /><span
+                  >@1901 Thornridge Cir. Shiloh, Hawaii 81063</span
+                >
+              </div>
+            </div>
           </div>
-          <button href="" class="form-button">Confirm Reservation</button>
         </form>
       </div>
     </div>
   </body>
-  <script src="js/reserve.js"></script>
+  <script src="js/gallery.js"></script>
 </html>
