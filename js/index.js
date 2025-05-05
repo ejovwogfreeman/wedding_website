@@ -203,3 +203,39 @@ window.addEventListener("resize", () => updateSlider2(false));
 // Initial setup
 updateSlider2(false);
 startAutoSlide2();
+
+// Select all copy icons
+document.querySelectorAll(".copy-icon").forEach((icon) => {
+  icon.addEventListener("click", () => {
+    // Get the sibling <p> tag text inside the same section
+    const text = icon.parentElement.querySelector("p").textContent;
+
+    // Copy the text to clipboard
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        alert(`Copied: "${text}"`);
+      })
+      .catch((err) => {
+        console.error("Copy failed", err);
+      });
+  });
+});
+
+document.querySelectorAll(".copy").forEach((icon) => {
+  icon.addEventListener("click", () => {
+    // Navigate up to the parent '.contact-number' and find the <span>
+    const contactBox = icon.closest(".contact-number");
+    const spanText = contactBox.querySelector(".left span").textContent.trim();
+
+    // Copy the text to clipboard
+    navigator.clipboard
+      .writeText(spanText)
+      .then(() => {
+        alert(`Copied: ${spanText}`);
+      })
+      .catch((err) => {
+        console.error("Copy failed", err);
+      });
+  });
+});
