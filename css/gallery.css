@@ -30,7 +30,7 @@ body {
   width: 400px;
   padding: 20px;
   background-color: #f3f3f3;
-  background: url("https://picsum.photos/id/1015/500/700");
+  background: url("https://picsum.photos/id/1015/400/500");
   object-fit: cover;
   position: relative;
   height: 100dvh;
